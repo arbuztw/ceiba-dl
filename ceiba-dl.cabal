@@ -16,7 +16,12 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
+                     , Session
   build-depends:       base >= 4.7 && < 5
+                     , mtl
+                     , bytestring
+                     , http-types
+                     , http-conduit
   default-language:    Haskell2010
 
 executable ceiba-dl-exe
